@@ -8,5 +8,9 @@ public class Main {
         Floor floor = new Floor(2.75, 4.0);
         Calculator calculator = new Calculator(floor, carpet);
         System.out.println("total = " + calculator.getTotalCost());
+        carpet = new Carpet(4.5);
+        floor = new Floor(10, 1.2);
+        calculator = new Calculator(floor, carpet);
+        System.out.println("new total is " + calculator.getTotalCost());
     }
 }
